@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="./bootstrap.css">
+    <title>Basic Bootstrap Template</title>
+</head>
+<body>
+    <h1>Creating Containers with Bootstrap</h1>
+
+    <ol>
+        <h3>3 Different types of containers</h3>
+        <li>fixed - this is the <b>.container class</b> that provides responsive a responsive fixed width container.</li>
+        <li>fluid - this is the <b>.container-fluid</b> that provides a full width container spanning </li>
+        <li>responsive - allow you to specify class that is 100% wide until the specified breakpoint is reached. The breakpoints can be
+            <ul>
+                <li>sm</li>
+                <li>md</li>
+                <li>xl</li>
+                <li>xxl</li>
+            </ul>
+        </li>
+    </ol>
+
+    <div class="container border-top border-black rounded-4 pt-4">
+        <h2>This is a fixed container</h2>
+        <p>This is a paragraph using class <b>.container</b></p>
+        <p>with a <b>border-top</b></p>
+        <p>and a border <b>rounded-4</b></p>
+        <ul>
+            <h4>FOR PADDING</h4>
+            <li><b>pt-#</b> for padding top</li>
+            <li><b>pb-#</b> for padding bottom</li>
+            <li><b>ps-#</b> for padding left</li>
+            <li><b>pe-#</b> for padding right</li>
+            <li><b>py-#</b> for padding top and bottom</li>
+            <li><b>px-#</b> for padding left and right </li>
+        </ul>
+    </div>
+
+    <div class="container-fluid">
+        <h2>This is a container-fluid</h2>
+        <p>This is a paragraph using class <b>.container-fluid</b></p>
+    </div>
+
+    <div class="container-sm border p-3 bg-primary text-white">
+        <h2>Responsive Breakpoints</h2>
+        <p>100% wide unlit screen size is less than <b>576px</b></p>
+    </div>
+    
+    <div class="container-md border p-3 bg-secondary text-warning">
+        <p>100% wide until screen size is less than <b>768px</b></p>
+    </div>
+
+    <div class="container-lg border p-3 bg-success text-danger">
+        <p>100% wide until screen size is less than <b>992px</b></p>
+    </div>
+
+    <div class="container-xl border p-3 bg-danger text-success">
+        <p>100% wide until screen size is less than <b>1200px</b></p>
+    </div>
+
+    <div class="container-xxl border p-3 bg-warning text-primary">
+        <p>100% wide until screen size is less than <b>1400px</b></p>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
+</body>
+</html>

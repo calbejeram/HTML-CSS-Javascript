@@ -1,0 +1,29 @@
+BEGIN
+	// Get the user inputs
+	user input numberOne  // must be an integer
+	user input numberTwo  // must be an integer
+
+	// Sum of the user inputs
+	sum is equals to zero
+
+	// Using operators
+	if user input numberOne + user input numberTwo
+		sum is equal numberOne + numberTwo
+		display/print sum
+
+	else if user input numberOne - user input numberTwo
+		sum is equal to numberOne - numberTwo
+		display/print sum
+
+	else if user input numberOne * user input numberTwo
+		sum is equal to numberOne * numberTwo
+		display/print sum
+
+	else if user input numberOne / user input numberTwo
+		sum is equal to numberOne / numberTwo
+		display/print sum
+
+	else
+	// if user input is not a number or empty ""
+	display/print "Invalid Input"
+END

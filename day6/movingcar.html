@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            min-height: 100vh;
+            background-image: url(images/highwaybackground.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            z-index: -1;
+        }
+
+        .my-car {
+            position: absolute;
+            top: 400px;
+            left: 100px;
+        }
+
+        .my-car .main-car {
+            position: relative;
+            width: 300px;
+            overflow: hidden;
+            transition: 1s;
+        }
+
+        .my-car {
+            animation: starts 1.9s infinite;
+        }
+
+        @keyframes starts {
+            0% {
+                transform: translate(0px);
+            }
+
+            100% {
+                transform: translate(1100px);
+            }
+        }
+
+
+        .rear-wheel {
+            position: absolute;
+            top: 137px;
+            right: 216px;
+            width: 60px;
+            height: auto;
+            animation: spin 0.1s infinite;
+        }
+
+        .front-wheel {
+            position: absolute;
+            top: 138px;
+            right: 36px;
+            width: 60px;
+            height: auto;
+            animation: spin 0.1s infinite;
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(-360deg);
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="./images/logo.png" style="width: 800px;" alt="logo">
+        </div>
+        <div class="my-car">
+            <img src="./images/mycar.png" class="main-car" alt="my-car">
+            <img src="./images/rearwheel.png" alt="rear wheel photo" class="rear-wheel">
+            <img src="./images/rearwheel.png" alt="rear wheel photo" class="front-wheel">
+        </div>
+    </div>
+</body>
+</html>

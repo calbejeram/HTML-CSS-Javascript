@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Functions</title>
+</head>
+<body>
+    <button onclick="showDateAndTime()" id="show-button">Click me to show date</button>
+
+    <script>
+
+        const button1 = document.getElementById('show-button');
+        const date = new Date;
+        const month = date.getMonth()
+        const time = date.getTime();
+
+        function showDateAndTime() {
+            alert(date);
+        }
+
+        showDateAndTime()
+
+        button1.addEventListener('click', showDateAndTime);
+    </script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+// Form
+let frmMovieReview = document.querySelector("#frmMovieReview");
+// Input Fields
+let movieTitle = document.querySelector("#movieTitle");
+let yearReleased = document.querySelector("#yearReleased");
+let review = document.querySelector("#review");
+let reviewedBy = document.querySelector("#reviewedBy");
+// Buttons
+let btnAddReview = document.getElementById("btnAddReview");
+let btnDisplayReview = document.getElementById("btnDisplayReview");
+// Display for All Reviews
+let reviewsContainer = document.querySelector("#reviewsContainer pre");
+
+const movieReviewsArr = [];
+
+const setMovieReviews = (event) => {
+  event.preventDefault();
+
+  const movieReviewObj = {
+    reviewID: Date.now(),
+    movieTitle: movieTitle.value,
+    yearReleased: yearReleased.value,
+    review: review.value,
+    reviewedBy: reviewedBy.value,
+  };
+
+  // console.log(movieReviewObj);
+
+  movieReviewsArr.push(movieReviewObj);
+
+  // console.log(movieReviewsArr);
+
+  reviewsContainer.innerHTML = JSON.stringify(movieReviewsArr, null, 2);
+
+  localStorage.setItem("movieReviews", JSON.stringify(movieReviewsArr));
+
+  let allMovieReviews = localStorage.getItem("movieReviews");
+
+  console.log(JSON.parse(allMovieReviews));
+
+  frmMovieReview.reset();
+};
+
+btnAddReview.addEventListener("click", setMovieReviews);

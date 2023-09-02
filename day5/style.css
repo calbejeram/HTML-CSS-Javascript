@@ -1,0 +1,11 @@
+body {
+    background-color: beige;
+}
+
+div {
+    width: fit-content;
+    padding: 50px;
+    margin: 20px;
+    border: 15px solid green;
+    background-color: lightgray;
+}

@@ -1,0 +1,137 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-y: hidden;
+    background-color: beige;
+    height: 100vh;
+}
+
+.productCard {
+    background-color: white;
+    display: grid;
+    grid-template-rows: 55% 45%;
+    width: 45%;
+    height: 100%;
+    box-shadow: 10px 10px 25px 0px darkcyan;
+}
+
+.productImg {
+    background-image: url(images/porscheblack.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 40px 10px;
+    position: relative;
+}
+
+.productDescription {
+    background-color: aquamarine;
+    padding-left: 20px;
+}
+
+.category {
+    background-color: black;
+    border-radius: 5px;
+    color: white;
+    width: 8rem;
+    padding-left: 15px;
+}
+
+.productTitle {
+    font-weight: bolder;
+}
+
+.productDetails {
+    display: flex;
+    flex-direction: column;
+}
+
+.colorsPrice {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 70%;
+    justify-content: space-between;
+}
+
+.colors {
+    display: flex;
+    justify-content: space-between;
+    width: 10rem;
+}
+
+.pricing {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.black,
+.red,
+.yellow,
+.blue {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.black,
+.red,
+.yellow,
+.blue:hover {
+    cursor: pointer;
+}
+
+.black {
+    background-color: black;
+}
+
+.red {
+    background-color: red;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.blue {
+    background-color: blue;
+}
+
+#addCrtBtn {
+    background-color: black;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.btnText {
+    color: white;
+}
+
+.message {
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    background-color: rgb(155, 142, 142);
+    font-size: 2rem;
+    border-radius: 5px;
+    padding: 5px 10px;
+    display: none;
+    animation: appear .5s;
+}
+
+@keyframes appear {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+

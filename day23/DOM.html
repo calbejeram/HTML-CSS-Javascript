@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Javascript DOM</title>
+</head>
+<body>
+    <h1>Document Object Model</h1>
+
+    <ol>
+        <li>
+            <h3>document.getElementById();</h3>
+            <p>
+                -returns an element object that represents an HTML Element with an ID.
+            </p>
+            <p>example:
+                let element = document.getElementById('elementId');
+            </p>
+            <p id="p1">
+                This is a paragraph
+            </p>
+        </li>
+        <li>
+            <h3>document.getElemenstByName();</h3>
+            <p>
+                -it accepts a name which is the value of elements attribute, and it returns a nodelist of elements.
+            </p>
+            <p>example:
+                <br>
+                <label for="">Rate this service</label><br>
+                <input type="radio" name="rate" value="Poor" id="poor">Poor
+                <input type="radio" name="rate" value="Okay" id="okay">Okay
+                <input type="radio" name="rate" value="Good" id="good">Good
+                <input type="radio" name="rate" value="Very Good" id="verygood">Very Good
+                <br>
+                <button id="btn-rate">Submit</button>
+                <br>
+
+                <p id="output"></p>
+            </p>
+        </li>
+        <li>
+            <h3>document.getElementsByTagName();</h3>
+            <p>
+                -it accepts a tagname and return a HTML collection of elements with a matching tagname.
+            </p>
+            <p>example:
+                <h2>First Heading</h2>
+                <h2>Second Heading</h2>
+                <h2>Third Heading</h2>
+                <button id="btn-count">
+                    <h2>Count</h2>
+                </button>
+            </p>
+        </li>
+        <li>
+            <h3>document.getElementsByClassName();</h3>
+            <p>
+                -it turns array like objects of the child elements with specified class name.
+            </p>
+            <p>example:
+
+                <ul id="menu">
+                    <li class="item">HTML</li>
+                    <li class="item">CSS</li>
+                    <li class="item">Javascript</li>
+                </ul>
+            </p>
+        </li>
+        <li>
+            <h3>document.querySelector();</h3>
+            <p>
+                -query selector method allow you to select the first element that matches one or more css selector.
+            </p>
+            <p>example:
+                
+                <p class="myClass">
+                    This is a sample of query selector.
+                </p>
+                <div id="response">
+                    
+                </div>
+            </p>
+        </li>
+        <li>
+            <h3>document.querySelectorAll();</h3>
+            <p>
+                -it returns all elements that matches the selection.
+            </p>
+            <p>example:
+
+                <div id="sample">
+                    <p>This is a paragraph 1</p>
+                    <p>This is a paragraph 2</p>
+                </div>
+                <button id="clickableBtn">Click this button</button>
+            </p>
+        </li>
+        <li>
+            <h3>Challenge</h3>
+
+            <label for="animals">Animals</label>
+            <select name="animals" id="animals">
+                <option value="cat">CAT</option>
+                <option value="dog">DOG</option>
+                <option value="lion">LION</option>
+                <option value="tiger">TIGER</option>
+                <option value="elephant">ELEPHANT</option>
+            </select>
+            <button type="button" id="rmvBtn">Remove</button>
+        </li>
+    </ol>
+
+    
+
+    <script src="script.js"></script>
+</body>
+</html>

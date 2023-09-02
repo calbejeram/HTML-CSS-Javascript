@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1, h2 {
+            color: darkgreen;
+            text-align: center;
+            text-transform: capitalize;
+            letter-spacing: -2px;
+            word-spacing: 10px;
+        }
+
+        h2 {
+            color: darkgreen;
+            text-align: left;
+            text-decoration: underline;
+        }
+
+        p {
+            color: blue;
+        }
+        
+        body {
+            background-image: url(images/bodybackground.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+
+        div.background {
+            border: 2px solid black;
+            background-image: url(images/image1.jpg);
+            padding: 30px;
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: inset 5px 5px 10px 5px red;
+        }
+
+        .transparent-box {
+            background-color: white;
+            border: 1px solid black;
+            padding: 10px;
+            opacity: 0.6
+        }
+
+        .shadow-box {
+            padding: 20px;
+            width: 150px;
+            height: 50px;
+            background-color: white;
+            box-shadow: inset 5px 5px green;
+        }
+
+        .transition-box {
+            opacity: 1;
+            width: 150px;
+            height: 50px;
+            padding: 30px;
+            background-color: yellowgreen;
+            transition: 0.4s;
+        }
+
+        .transition-box:hover {
+            opacity: 0.5;
+        }
+
+        .hover-me {
+            position: relative;
+            background-color: red;
+            padding: 10px;
+            width: 100px;
+        }
+
+        .tooltip {
+            position: absolute;
+            background-color: rgb(114, 112, 112);
+            padding: 10px;
+            width: 100px;
+            left: 50px;
+            visibility: hidden;
+        }
+
+        .hover-me:hover .tooltip {
+            visibility: visible;
+        }
+
+        .transform-box {
+            width: 100px;
+            padding: 10px;
+            background-color: blue;
+            transition: .2s;
+        }
+
+        .transform-box:hover {
+            transform: scale(2);
+            transition: .5s;
+        }
+
+        .animation-box {
+            width: 100px;
+            padding: 10px;
+            background-color: blue;
+        }
+
+        .animation-box:hover {
+            animation: roll 1s infinite;
+        }
+
+        @keyframes roll {
+            0% { transform: rotate(360deg);}
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Effects</h1>
+    <p>
+        These are the several types of CSS effects
+        <ol>
+            <li>opacity : determines the transparency of the element</li>
+            <img src="/images/bodybackground.png" style="height: 300px; opacity: 0.8;" alt="image1">
+            <div style="opacity: 1; background-color: cyan;">
+                opacity 1
+            </div>
+            <div style="opacity: 0.7; background-color: cyan;">
+                opacity 0.7
+            </div>
+            <div style="opacity: 0.3; background-color: cyan;">
+                opacity 0.3
+            </div>
+            <div class="background">
+                <div class="transparent-box">
+                    This box contains the transparent property with text content
+                </div>
+            </div>
+
+            <li>shadow: creates a CSS shadow to the HTML Elements</li>
+            <div class="shadow-box">
+                this is an element with box shadow
+            </div>
+            <li>transitions : use to animate properties</li>
+            <div class="transition-box">
+                this is an element with box shadow
+            </div>
+            <li>tooltips</li>
+            <div class="hover-me">
+                Hover me
+                <div class="tooltip">
+                    this is my tooltip
+                </div>
+            </div>
+            <li>transform : visually controls the element</li>
+            <div class="transform-box">
+                this box will transform
+            </div>
+            <li>animations</li>
+            <div class="animation-box">
+                this box will transform
+            </div>
+        </ol>
+    </p>
+
+    <h1>CSS Gradients</h1>
+    <p>
+        There are three types of CSS gradients
+        <ol>
+            <li style="background: linear-gradient(to right, yellow, rgb(30, 255, 0));">linear-gadient : create a linear gradients that shows you a multiple colors within a straight line.</li>
+            <li style="background: radial-gradient(circle, lightblue 10%, rgb(255, 0, 94), yellow);">radial-gradient : creates images that transition color which radiate in specific spot</li>
+            <li></li>
+        </ol>
+    </p>
+
+    <h1>CSS Colors</h1>
+    <p>
+        There are four values types for CSS Colors
+        <ol>
+            <li>Color keyword : setting colors for html elements</li>
+            <li style="background-color: rgba(23,255,12, 0.5);">RGB values : A CSS function that has a parameter values which are red, green, and blue. ex. rgb(red, green, blue).</li>
+            <li style="background-color: #FFFFFF">Hexadecimal value : values that starts with "#".</li>
+            <li style="background-color: hsl(123, 42%, 22%);">HSL: stands for Hue, Saturation, and Lightness. ex. (hsl(Hue, Saturation, Lightness))</li>
+        </ol>
+    </p>
+
+    <h1>CSS Background Color and Image Styling Properties</h1>
+    <h2>Background Properties</h2>
+    <ol style="background-color: blanchedalmond;">
+        <li>background-color : sets background-color of your HTML elements</li>
+        <li>background-image : allows you to specify an image to use in your HTML elements</li>
+    </ol>
+    <hr>
+
+    <h1>CSS Typography</h1>
+    <p>
+        <h2>Popular CSS text styling options</h2>
+        <span style="color:darkorange">These are the following Css properties</span>
+        <ol>
+            <li>color : sets the color of a text</li>
+            <li>text-align : is for the alignment of html text</li>
+            <li>text-transform : transforms the text in uppercase, lowercase or capitalize</li>
+            <li>text-decoration : sets decoratve lines to emphasize points of a text</li>
+            <li>text-indent : is use for indentation of the first line of each paragraph</li>
+            <li>letter-spacing : is used for spacing between characters</li>
+            <li>word-spacing : is used for spacing between words</li>
+            <li>line-height : is used for spacing vertically between lines of text</li>
+            <li>direction : is used for defining the direction of a text, It can be form left to the right of vice versa</li>
+            <li>text-shadow : applies a shadow to the text</li>
+            <li>text-overflow : defines how overflow text of the contect</li>
+            <li>overflow-wrap : breaks long word and wrap onto the next line. Used to prevent text from overflowing from the line box.</li>
+            <li>word-break : sets the line breaking rules when text overflow in its content box</li>
+        </ol>
+    </p>
+
+    <hr>
+
+    <h1>CSS Typography</h1>
+    <p>
+        <h2>This is Typography Style</h2>
+        <span style="color:darkorange">Font Property</span>
+        <ol>
+            <li>font-family : sets a font for an element. A specific font family</li>
+            <ul>
+                <li>generic-family</li>
+                <ul>
+                    <li>Serif</li>
+                    <li>San-serif</li>
+                    <li>Monospace</li>
+                </ul>
+            </ul>
+            <ul>
+                <li>family-name</li>
+                <ul>
+                    <li>Arial, Verdana - serif</li>
+                    <li>Times new roman, Georgi-sa-serif</li>
+                    <li>Lucda, Courier - monospace</li>
+                </ul>
+            </ul>
+            <li>font-size : specify the size of the character</li>
+            <li>font-weight : decide the thickness of your character</li>
+            <li>font-variant : transform the text to smaller, uppercase</li>
+            <li>font-stretch : it condense or expanded spae from fonts</li>
+            <li>line-height : specify the height of the box</li>
+            <li>font : short hand of font properties</li>
+        </ol>
+    </p>
+</body>
+</html>

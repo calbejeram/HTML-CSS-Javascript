@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schedule Table</title>
+    <style>
+        table {
+            border: 3px solid black;
+        }
+        tr, td, th {
+            padding: 5px;
+            border: 2px solid black;
+            text-align: center;
+        }
+        thead {
+            background-color: cyan;
+        }
+        caption {
+            font-weight: bold;
+            padding: 5px;
+            border: 2px solid black;
+        }   
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th rowspan="3">Day</th>
+                <th colspan="3">Seminar</th>
+            </tr>
+            <tr>
+                <th colspan="2">Schedule</th>
+                <th rowspan="2">Topic</th>
+            </tr>
+            <tr>
+                <th>Begin</th>
+                <th>End</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="2">Monday</td>
+                <td rowspan="2">8:00 a.m.</td>
+                <td rowspan="2">5:00 p.m.</td>
+                <td>Introduction to XML</td>
+            </tr>
+            <tr>
+                <td>Validity: DTD and Relax NG</td>
+            </tr>
+            <tr>
+                <td rowspan="3">Tuesday</td>
+                <td>8:00 a.m.</td>
+                <td>11:00 a.m.</td>
+                <td rowspan="2">XPath</td>
+            </tr>
+            <tr>
+                <td>11:00 a.m.</td>
+                <td>2:00 p.m.</td>  
+            </tr>
+            <tr>
+                <td>2:00 p.m.</td>
+                <td>5:00 p.m.</td>
+                <td>XSL Transformations</td>
+            </tr>
+            <tr>
+                <td>Wednesday</td>
+                <td>8:00 a.m.</td>
+                <td>12:00 p.m.</td>
+                <td>XSL Formatting Objects</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- ------------------------------------------------------------------------------------------- -->
+    
+    <br>
+
+    <table>
+        <thead>
+            <tr>
+                <caption>Time Table</caption>
+                <th>Schedule</th>
+                <th>Mon</th>
+                <th>Tues</th>
+                <th>Wed</th>
+                <th>Thursday</th>
+                <th>Friday</th>
+                <th>Saturday</th>
+                <th>Sunday</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>9:00 a.m.</td>
+                <td rowspan="4" colspan="5">Learn Full-Stack Web Development</td>
+                <td rowspan="2">Sleep</td>
+                <td rowspan="2">Church</td>
+            </tr>
+            <tr>
+                <td>10:00 a.m.</td>
+            </tr>
+            <tr>
+                <td>11:00 a.m.</td>
+                <td rowspan="2">Study</td>
+                <td rowspan="2">Study</td>
+            </tr>
+            <tr>
+                <td>12:00 p.m.</td>
+            </tr>
+            <tr>
+                <td colspan="8" style="text-align:center;"><b>LUNCH TIME</b></td>
+            </tr>
+            <tr>
+                <td>1:00 p.m.</td>
+                <td rowspan="6" colspan="5">Learn Full-Stack Web Development</td>
+                <td rowspan="4">Study</td>
+                <td rowspan="4">Study</td>
+            </tr>
+            <tr>
+                <td>2:00 p.m.</td>
+            </tr>
+            <tr>
+                <td>3:00 p.m.</td>
+            </tr>
+            <tr>
+                <td>4:00 p.m.</td>
+            </tr>
+            <tr>
+                <td>5:00 p.m.</td>
+                <td rowspan="2">Go to the GYM</td>
+                <td rowspan="2">Go to the GYM</td>
+            </tr>
+            <tr>
+                <td>6:00 p.m.</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <br>
+
+    <!-- ------------------------------------------------------------------------------------------- -->
+    <table>
+        <thead>
+            <tr>
+                <th rowspan="3">Hours</th>
+                <th colspan="3">Specialized</th>
+            </tr>
+            <tr>
+                <th colspan="2">Cooking</th>
+                <th rowspan="2">Washing</th>
+            </tr>
+            <tr>
+                <th colspan="2">Cleaning</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="2">Hello</td>
+                <td rowspan="2">Hello</td>
+                <td rowspan="2">Hello</td>
+                <td>Hello Master</td>
+            </tr>
+            <tr>
+                <td>Hello Master</td>
+            </tr>
+            <tr>
+                <td rowspan="3">Smirnoff</td>
+                <td colspan="2">Heiniken</td>
+                <td>San Mig</td>
+            </tr>
+            <tr>
+                <td colspan="2">Red Horse</td>
+                <td rowspan="2">Mojito</td>
+            </tr>
+            <tr>
+                <td colspan="2">San Mig</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Red Horse</td>
+                <td>Red Horse</td>
+                <td>Red Horse</td>
+                <td>Red Horse</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>

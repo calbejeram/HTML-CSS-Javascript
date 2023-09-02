@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> My First Web Page </title>
+	<meta charset="UTF-8">
+</head>
+<body>
+	<h1 style="color:blue;"> My Passions</h1>
+	<li>
+	    <ol type="1">
+		<li> Coding </li>
+		<li> Codings </li>
+		<li> Codingss </li>
+	</li>
+	<li>
+	    <ul type="circle">
+		<li> Coding </li>
+		<li> Coding </li>
+		<li> Coding </li>
+</body>
+</html>

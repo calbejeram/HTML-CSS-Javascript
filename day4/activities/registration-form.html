@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        table, tr, td {
+            border: 2px solid blue;
+        }
+
+        caption {
+            font-size: large;
+            font-weight: bold;
+            padding: 20px;
+            border: 2px solid blue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Registration Form</h1>
+    <form>
+        <table>
+            <caption>Registration Form</caption>
+            <tbody>
+                <tr>
+                    <td><label for="firstName">First name:</label></td>
+                    <td><input type="text" name="firstName" id="firstName"></td>
+                </tr>
+                <tr>
+                    <td><label for="middleName">Middle name:</label></td>
+                    <td><input type="text" name="middleName" id="middleName"></td>
+                </tr>
+                <tr>
+                    <td><label for="lastName">Last name:</label></td>
+                    <td><input type="text" name="lastName" id="lastName"></td>
+                </tr>
+                <tr>
+                    <td><label for="address">Address:</label></td>
+                    <td><textarea name="address" id="address" cols="24" rows="5"></textarea></td>
+                </tr>
+                <tr>
+                    <td><label for="gender">Gender:</label></td>
+                    <td>
+                        <input type="radio" name="gender" id="gender" value="Male"> Male
+                        &nbsp;
+                        <input type="radio" name="gender" id="gender" value="Female"> Female
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="careerPath">Select Career Path:</label></td>
+                    <td>
+                        <select name="careerPath" id="careerPath">
+                            <option value="select-one">Please Select One</option>
+                            <option value="full-stack-developer">Full-Stack Developer</option>
+                            <option value="front-end-developer">Frontend Developer</option>
+                            <option value="back-stack-developer">Backend Developer</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="technichalSkills">Technical Skills:</label></td>
+                    <td>
+                        <input type="checkbox" name="html" id="html">HTML &nbsp;
+                        <input type="checkbox" name="css" id="css">CSS &nbsp;
+                        <input type="checkbox" name="js" id="js">JavaScript &nbsp;<br>
+                        <input type="checkbox" name="mysql" id="mysql"> My SQL &nbsp;
+                        <input type="checkbox" name="php" id="php"> PHP &nbsp;
+                        <input type="checkbox" name="laravel" id="laravel"> Laravel &nbsp;
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="submit" name="submitButton" id="submitButton">
+                        <input type="reset" name="resetButton" id="resetButton">
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+</body>
+</html>

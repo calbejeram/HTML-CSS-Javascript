@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="holygrail.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Header</h1>
+        </header>
+
+        <main>
+            <form>
+                <div class="inputs">
+                    <label for="name">Name:</label>
+                    <input type="text" name="name" id="name">
+
+                    <label for="phone">Phone</label>
+                    <input type="number" name="phone" id="phone">
+
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email">
+
+                    <label for="date">Pickup Date Time</label>
+                    <input type="date" name="date" id="date">
+
+                    <label for="place">Pickup Place</label>
+                    <select name="place" id="place">
+                        <option value="none">Select One</option>
+                    </select>
+
+                    <label for="dropoff">Dropoff Place</label>
+                    <input type="text" name="dropoff" id="dropoff">
+                </div>
+
+                <div class="radio">
+                    <div class="vehicles">
+                        <label for="vehicle">Which Vehicle do you require?</label>
+                        <input type="radio" name="van" id="van" value="van">Van
+                        <input type="radio" name="jeepney" id="jeepney" value="jeepney">Jeepney
+                        <input type="radio" name="tricycle" id="tricycle" value="tricycle">Tricycle
+                    </div>
+
+                    <div class="extras">
+                        <label for="extras">Extras</label>
+                        <input type="checkbox" name="extra1" id="extra1" value="babyseat">Babyseat
+                        <input type="checkbox" name="extra2" id="extra2" value="wheelchair">Wheelchair Access
+                        <input type="checkbox" name="extra3" id="extra3" value="stocktip">Stock Tip
+                    </div>
+                </div>
+
+                <div class="submit-button">
+                    <button>
+                        Submit Booking
+                    </button>
+                </div>
+            </form>
+        </main>
+
+        <aside>
+            Aside
+        </aside>
+
+        <nav>
+            Nav
+        </nav>
+
+        <footer>
+            <h3>Footer</h3>
+        </footer>
+    </div>
+</body>
+</html>

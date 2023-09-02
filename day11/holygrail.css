@@ -1,0 +1,107 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: grid;
+    grid-template-areas:
+    'header header header'
+    'main aside nav'
+    'footer footer footer';
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 1fr 200px 200px;
+    grid-gap: 10px;
+    height: 100vh;
+}
+
+header,
+main,
+aside,
+nav,
+footer {
+    padding: 10px;
+}
+
+header,
+footer {
+    background-color: yellowgreen;
+    height: 20vh;
+}
+
+aside {
+    background-color: bisque;
+}
+
+nav {
+    background-color: lightblue;
+}
+
+header {
+    grid-area: header;
+}
+
+main {
+    grid-area: main;
+}
+
+main form {
+    background-color: rgb(199, 194, 189);
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+main form div {
+    margin: 20px;
+}
+
+main form .inputs {
+    display: flex;
+    flex-direction: column;
+}
+
+main form .radio {
+    display: flex;
+    flex-direction: column;
+}
+
+main form .radio .vehicles {
+    display: flex;
+    flex-direction: column;
+}
+
+main form .radio .extras {
+    display: flex;
+    flex-direction: column;
+}
+
+aside {
+    grid-area: aside;
+}
+
+nav {
+    grid-area: nav;
+}
+
+footer {
+    grid-area: footer;
+}
+
+/* Media Queries */
+/* @media screen and (max-width: 480px) {
+    .container {
+        display: grid;
+        grid-template-areas: 
+        'header'
+        'main'
+        'aside'
+        'nav'
+        'footer';
+        grid-template-rows: repeat(5, 1fr);
+        grid-template-columns: 1fr;
+        height: 100vh;
+    }  
+} */

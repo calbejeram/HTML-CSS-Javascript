@@ -1,0 +1,21 @@
+Write the SQL queries of the following using the Sakila DB:
+
+1. List the top 5 highest rental rate in store 1  
+
+2. List films with Trailers 
+
+3. List the films with rental duration between 3 to 5
+
+4. Display the number of film for each category. 
+
+5. Display the most frequently rented movies in descending order. 
+
+6. Display all the movies categorized as family films
+
+7. List each film and the number of actors who are listed for that film.
+
+8. List the total paid by each customer. Display alphabetically by last name
+
+9. What is that average length of all the films in the sakila DB?
+
+10. The owner wants to run an email marketing campaign in Canada. Display the names and email addresses of all Canadian customers.

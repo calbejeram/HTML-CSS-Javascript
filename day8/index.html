@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>CSS Layout</title>
+</head>
+<body>
+    <h1>CSS Layout</h1>
+    <h2>CSS Display Property</h2>
+
+    <p>
+        Controls the way HTML elements are presented in web development
+    </p>
+
+    <h3>2 Major Catergories</h3>
+
+    <ol> block-elements
+       <ol>
+        <li>div,</li>
+        <li>h1,</li>
+        <li>p,</li>
+        <li>ul/ol,</li>
+       </ol>
+    </ol>
+    <ol>inline-elements
+        <ol>
+            <li>span,</li>
+            <li>a,</li>
+            <li>b,</li>
+            <li>img,</li>
+        </ol>
+    </ol>
+
+    <h3>
+        The display Property
+    </h3>
+
+    <p><b>Display: inline;</b> - stays in the same line and only takes the width of its content.</p>
+
+    <div>
+        This is a sample of display: inline.
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore ab aliquam fugiat quam libero, provident sapiente dicta magnam distinctio velit?
+        <p class="inline">
+            <b>This is a paragraph tag, with a class inline</b>
+        </p>
+    </div>
+
+    <hr>
+
+    <p><b>Dislplay: block;</b> the elements takes the largest possible width, it also appears in a new line</p>
+
+    <div>
+        This is a sample of display: block.
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore ab aliquam fugiat quam libero, provident sapiente dicta magnam distinctio velit?
+        <span class="spanblock">
+            <b>This is a span tag with a class spanblock</b>
+        </span>
+    </div>
+    <div class="inline-block" style="background-color: blue;">First Element</div>
+    <div class="inline-block" style="background-color: red;">Second Element</div>
+    <div class="inline-block" style="background-color: green;">Third Element</div>
+
+    <h2>CSS Position Property</h2>
+
+    <p>
+        It indicate the position of elements in an HTML Documents.
+    </p>
+
+    <p><b>position: relative;</b> - it means that it follows the regular flow of the document and the ofsets relative to itself according to the properties top, right, bottom, and left. </p>
+
+    <div class="relative">
+        This is a div tag with a relative position
+    </div>
+
+    <br>
+
+    <p><b>position: fixed;</b> - an element is relative to the browser window or the viewport</p>
+
+    <div class="fixed">
+        This is a div tag with a fixed position
+    </div>
+
+    <br>
+
+    <p><b>position: sticky;</b> - sets an element as relative however it becomes fixed when the element reached a specific position during scrolling</p>
+
+    <footer>
+        This is a footer tag with a sticky position
+    </footer>
+
+    <br>
+
+    <p><b>position: absolute;</b> - this element is eliminated from the regular flow of the document and other element are ignored</p>
+
+    <div class="parent-container">
+        <div class="div1 child">1</div>
+        <div class="div2 child">2</div>
+        <div class="div3 child">3</div>
+        <div class="div4 child">4</div>
+    </div>
+
+    <h2>CSS Float Property</h2>
+
+    <p>
+        This property is for positioning element to the left or right side of the container.
+    </p>
+
+    <div class="floatbox">First float div</div>
+    <div class="floatbox">Second float div</div>
+    <div class="floatbox">Third float div</div>
+    <div class="floatbox">Fourth float div</div>
+    <div class="floatbox">Fifth float div</div>
+    <div class="clear" style="border: 1px solid black">Sixth float div</div>
+
+    <p class="left">
+        <img src="images/aboutimage.jpg" class="image2" alt="an image" style="width: 200px; height: 200px;">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto cumque rerum consequatur perspiciatis fuga totam nesciunt ex, alias dignissimos dolor minus reprehenderit corrupti esse sapiente, praesentium ad? Expedita, vitae? Dicta officiis sit dignissimos nisi, reprehenderit quia ratione praesentium atque laudantium, velit voluptates dolores quis earum quo nemo? Inventore, sint quis.
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque deserunt cum rem vero nobis quibusdam? Ipsum est sapiente error officia, reiciendis quisquam voluptas ullam dignissimos corporis cum provident quas aliquid ipsam molestias voluptatum tempora eos nesciunt explicabo numquam culpa recusandae saepe. Animi, aperiam nesciunt? Iste, veritatis delectus ut, suscipit perferendis sequi quas consectetur eaque aspernatur tempora explicabo nam vero minus odit maiores provident! Hic et vero voluptatum repellendus ad ipsam recusandae earum doloribus iure odit nihil corporis distinctio facilis sunt veritatis quibusdam, ipsum neque! Qui dolor tempora vero hic velit ullam, eligendi assumenda quis perferendis itaque minima optio, ipsa soluta.
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti molestiae officia obcaecati architecto neque dignissimos consequatur natus quo aspernatur modi harum ipsum temporibus dicta corporis, nostrum eligendi quas, eum, asperiores maxime quia autem magni voluptates perspiciatis officiis! Accusantium reprehenderit error hic non quisquam, amet pariatur, quam maxime, dolorum et assumenda.
+    </p>
+    <p class="right">
+        <img src="images/aboutimage.jpg" class="image1" alt="an image" style="width: 200px; height: 200px;">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto cumque rerum consequatur perspiciatis fuga totam nesciunt ex, alias dignissimos dolor minus reprehenderit corrupti esse sapiente, praesentium ad? Expedita, vitae? Dicta officiis sit dignissimos nisi, reprehenderit quia ratione praesentium atque laudantium, velit voluptates dolores quis earum quo nemo? Inventore, sint quis.
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque deserunt cum rem vero nobis quibusdam? Ipsum est sapiente error officia, reiciendis quisquam voluptas ullam dignissimos corporis cum provident quas aliquid ipsam molestias voluptatum tempora eos nesciunt explicabo numquam culpa recusandae saepe. Animi, aperiam nesciunt? Iste, veritatis delectus ut, suscipit perferendis sequi quas consectetur eaque aspernatur tempora explicabo nam vero minus odit maiores provident! Hic et vero voluptatum repellendus ad ipsam recusandae earum doloribus iure odit nihil corporis distinctio facilis sunt veritatis quibusdam, ipsum neque! Qui dolor tempora vero hic velit ullam, eligendi assumenda quis perferendis itaque minima optio, ipsa soluta.
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti molestiae officia obcaecati architecto neque dignissimos consequatur natus quo aspernatur modi harum ipsum temporibus dicta corporis, nostrum eligendi quas, eum, asperiores maxime quia autem magni voluptates perspiciatis officiis! Accusantium reprehenderit error hic non quisquam, amet pariatur, quam maxime, dolorum et assumenda.
+    </p>
+
+    <h3>Image Overflow fixed</h3>
+    <div style="border: 2px solid black; padding: 10px;" class="clearfixed">
+        <img src="/images/aboutimage.jpg" style="width: 150px;" alt="an image" class="right">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda deleniti possimus in iste amet, aliquam dignissimos sit beatae omnis quos sequi excepturi repellat, veritatis magnam. Nesciunt soluta aspernatur ipsam optio!
+    </div>
+</body>
+</html>

@@ -1,0 +1,54 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+     font-family: Arial, Helvetica, sans-serif;
+}
+
+header,
+footer {
+    background-color: yellowgreen;
+    height: 10vh;
+    padding: 10px;
+}
+
+main {
+    display: flex;
+    min-height: 60vh;
+    background-color: bisque;
+}
+
+nav,
+aside {
+    background-color: beige;
+    flex: 0 0 20vw;
+    padding: 20px;
+}
+
+article {
+    flex: auto;
+    padding: 20px;
+}
+
+
+/* Responsive */
+/* media = queries allows you to apply CSS styles depending on the devices general type or other screen resolution or browser viewport width */
+
+@media screen and (min-width: 480px) and (max-width: 600px) {
+
+    main {
+        flex-direction: column;
+    }
+
+    article {
+        order: -1;
+    }
+
+    aside {
+        background-color: red;
+    }
+     
+}

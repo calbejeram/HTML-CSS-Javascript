@@ -1,0 +1,43 @@
+.container {
+    display: flex;
+    background-color: bisque;
+    border: 1px solid black;
+    padding: 10px;
+    align-content: ;
+}
+
+.flex-row {
+    flex-flow: row wrap; /* flex-flow: row wrap; is shorthand for flex-direction and flex-wrap */
+    justify-content: center; /* for horizontal */
+}
+
+.flex-column {
+    flex-direction: column;
+    align-items: center; /* for vertical */
+}
+
+.box1 {
+    background-color: blue;
+}
+.box2 {
+    background-color: red;
+}
+.box3 {
+    background-color: green;
+}
+.box4 {
+    background-color: yellow;
+}
+.box5 {
+    background-color: violet;
+}
+
+.flexitem {
+    width: 50px;
+    margin: 10px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 25px;
+    line-height: 50px;
+}
+

@@ -1,0 +1,130 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    height: 200vh;
+}
+
+/* CSS display */
+.inline {
+    display: inline;
+}
+
+li {
+    display: inline;
+}
+
+.spanblock {
+    display: block;
+}
+
+.inline-block{
+    height: 100px;
+    width: 150px;
+    padding: 5px;
+    margin: 5px;
+    display: inline-block;
+}
+
+/* CSS position */
+
+.relative {
+    position: relative;
+    border: 2px solid red;
+    top: 30px;
+    left: 100px;
+}
+
+.fixed {
+    color: white;
+    padding: 5px;
+    position: fixed;
+    background-color: green;
+    top: 2px;
+    left: 2px;
+}
+
+footer {
+    position: sticky;
+    background-color: yellow;
+
+}
+
+.parent-container {
+    width: 500px;
+    border: 2px solid blue;
+    margin: auto;
+    text-align: center;
+    padding: 10px;
+}
+
+.div1 {
+    background-color: blue;
+    position: relative;
+    left: 100px;
+}
+
+.div2 {
+    background-color: red;
+}
+
+.div3 {
+    background-color: green;
+}
+
+.div4 {
+    background-color: orange;
+}
+
+.child {
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+    border-radius: 10%;
+}
+
+/* CSS float */
+
+.floatbox {
+    float: left;
+    border: 2px solid black;
+    width: 100px;
+    height: 100px;
+    margin-left: 10px;
+}
+
+.clear {
+    clear: left;
+}
+
+.right {
+    float: right;
+}
+
+.left {
+    float: left;
+}
+
+.image1 {
+    float: left;
+    margin-right: 10px;
+}
+
+.image2 {
+    float: right;
+    margin-right: 10px;
+}
+
+.clearfixed {
+    overflow: auto;
+}
+
+.clearfixed:after {
+    content: '';
+    display: block;
+    clear: both;
+    height: 0;
+    visibility: hidden;
+
+}

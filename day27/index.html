@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <!-- Bootstrap Icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <title>JS form Validation and Storage</title>
+</head>
+<body>
+    <h1>Javascript Form Validations and Storage</h1>
+    <div class="container w-75">
+        <div class="container-fluid">
+            <fieldset>
+                <legend>Registration Form</legend>
+                <!-- Validation Required
+                    1. All fields are mandatory
+                    2. Emails must be in the correct format
+                    3. Password should be:
+                        3.a. At least 8 Characters, and must contains;
+                        3.b. 1 lowercase
+                        3.c. 1 uppercase
+                        3.d. 1 number, and;
+                        3.e. 1 special character
+                    4. Confirm Password must be the same as the Password.
+                -->
+        
+                <form id="register" action="">
+                    <div class="formfield mb-5">
+                        <label for="firstName" id="label">First Name: <span>*</span></label>
+                        <input type="text" name="First Name" id="firstName" class="form-control">
+
+                        <small></small>
+                    </div>
+        
+                    <div class="formfield mb-5">
+                        <label for="lastName" id="label">Last Name: <span>*</span></label>
+                        <input type="text" name="Last Name" id="lastName" class="form-control mb-3">
+
+                        <small></small>
+                    </div>
+
+                    <div class="formfield mb-5">
+                        <label for="confirmPassword" id="label">Contact Number:</label>
+                        <input type="tel" name="Contact Number" id="contactNumber" class="form-control mb-3" maxlength="11">
+                        
+                        <small></small>
+                    </div>
+
+                    <div class="formfield mb-5">
+                        <label for="confirmPassword" id="label">Birthdate:</label>
+                        <input type="date" name="Birthdate" id="birthdate" class="form-control mb-3">
+                        
+                        <small></small>
+                    </div>
+        
+                    <div class="formfield mb-5">
+                        <label for="email" id="label">Email: <span>*</span></label>
+                        <input type="email" name="Email" id="email" class="form-control mb-3">
+
+                        <small></small>
+                    </div>
+        
+                    <div class="formfield mb-5">
+                        <label for="password" id="label">Password: <span>*</span></label>
+                        <input type="password" name="Password" id="password" class="form-control mb-3">
+                        <!-- <button class="btn" id="showPassword">
+                            <input class="form-check-input" type="checkbox" id="showPassCheck">
+                        </button>
+                        <label for="showPassword">Show Password</label> -->
+
+                        <small></small>
+                    </div>
+        
+                    <div class="formfield mb-5" >
+                        <label for="confirmPassword" id="label">Confirm Password: <span>*</span></label>
+                        <input type="password" name="Confirm Password" id="confirmPassword" class="form-control mb-3">
+                        <!-- <input class="form-check-input" type="checkbox" id="showPassChecked">
+                        <label for="showPassword">Show Password</label> -->
+                        
+                        <small></small>
+                    </div>
+        
+                    <button class="btn btn-primary" id="signUp">Sign Up</button>
+                </form>
+            </fieldset>
+        </div>
+    </div>
+
+
+    <!-- Boostrap Script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <!-- Custom JS Script -->
+    <script src="script.js"></script>
+</body>
+</html>

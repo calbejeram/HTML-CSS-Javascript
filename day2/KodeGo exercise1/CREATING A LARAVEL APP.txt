@@ -1,0 +1,42 @@
+STEPS IN CREATING LARAVEL APP
+
+1. Create laravel App through quick app or composer depency manager for php.
+	-It gives you the project structure in your project folder and other useful folder like app
+	 database, resources, routes and vendors folders.
+2. Setup database credentials in .env file
+	-It has all the credentials that you need to modify the database connection based on your local mysql
+	 server. It includes database name, root, password, server, port.
+
+3. Create table using Migration
+	-Go to VS terminal and type the following command.
+	command: php artisan make:migration create_(tablename)_table - 'tablename' is the table name for your table in database. when executed,
+	it will create a file in databse folder under migration subfolder, after this, open migration file and add neccessary name or column name on your database
+ 	table
+4. Run a command to create a database table
+	-php artisan migrate
+	-command to rollback: php rollback command, after running the command, check the database in workbench
+5. Set up the controller and Model
+	-php artisan make:controller (**controller name**) --resource (optional)
+		- it will create a file in app/http/controllers folder
+	-php artisan make:model (**model name**)
+		- contains all the methods and attribute that needed to interact the database schema
+
+OPTION: 1 liner command
+	php artisan make:model (**model name**) -mcr
+		M - -it will create migration file
+		C - controller for the model
+		R - resource
+
+		-a - it also create model, migration resource controller
+		-help - documentation of commands
+
+6. Modified the model file under app/model
+
+7. Create resource route in php under the routes folder
+
+8. Create templates on the resources/view folder
+	-It can be a blade template or php (**{{Blade template}} or <?Php ?>**)
+
+9. Run the development server and test your app
+	- if you dont have deelopment server, you can run the command
+	-command: php artisan server

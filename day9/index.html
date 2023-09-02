@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>CSS Flexbox</h1>
+
+    <p>Flexbox is one dmensional layout system to create advance layout, align, and distribute among items within a container</p>
+
+    <h3>flex-direction: row;</h3>
+    <div class="container flex-row">
+        <div class="flexitem box1">1</div>
+        <div class="flexitem box2">2</div>
+        <div class="flexitem box3">3</div>
+        <div class="flexitem box4">4</div>
+        <div class="flexitem box5">5</div>
+    </div>
+
+    <br>
+    
+    <h3>flex-direction: column;</h3>
+    <div class="container flex-column">
+        <div class="flexitem box1">1</div>
+        <div class="flexitem box2">2</div>
+        <div class="flexitem box3">3</div>
+        <div class="flexitem box4">4</div>
+        <div class="flexitem box5">5</div>
+    </div>
+
+    
+    <p>align-content is similar to align-items but it align items lines of list items within container along y-axis.</p>
+    
+    <div class="container flex-row">
+        <div class="flexitem box1">1</div>
+        <div class="flexitem box2">2</div>
+        <div class="flexitem box3">3</div>
+        <div class="flexitem box4">4</div>
+        <div class="flexitem box5">5</div>
+    </div>
+
+    <p>flex-row defines how much items are expanded in relation to other items. It can be set it values to positive integers.</p>
+
+    <div class="container flex-row">
+        <div class="flexitem box1" style="flex-grow: 4;">1</div>
+        <div class="flexitem box2" style="flex-grow: 2;">2</div>
+        <div class="flexitem box3">3</div>
+        <div class="flexitem box4">4</div>
+        <div class="flexitem box5">5</div>
+    </div>
+</body>
+</html>

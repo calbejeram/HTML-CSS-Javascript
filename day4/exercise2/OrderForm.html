@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Form</title>
+    <style>
+        .product-list {
+            border: 1px solid black;
+
+            .table, th, tr, td {
+                border: 1px solid black;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <fieldset>
+        <legend><h1>Land of Boxes Order Form</h1></legend>
+            <!-- I put my FORM in the table tag to make it more organize by not using CSS and also to practice Forms and Tables -->
+            
+            <!-- Create a header section for Personal Details-->
+            <header>
+                <!-- Create a FORM for PERSONAL Details -->
+                <form>
+                    <table>
+                        <tr>
+                            <td><label for="name">Name:</label></td>
+                            <td><input type="text" name="name" id="name" placeholder="Your Name"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="email">Email:</label></td>
+                            <td><input type="email" name="email" id="email" placeholder="YourEmail@email.com"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="address">Address</label></td>
+                            <td><textarea name="address" id="address" cols="22" rows="5" placeholder="Street, Road, Brgy, Sub. , City/Town"></textarea></td>
+                        </tr>
+                        <tr>
+                            <td><label for="post-code">Postcode:</label></td>
+                            <td><input type="text" name="post-code" id="post-code"></td>
+                        </tr>
+                    </table>
+                </form>
+            </header>
+
+            <br><br><br>
+
+            <!-- Create main section for Product Details-->
+            <main>
+                <section>
+                    <!-- Create a TABLE for products descriptions -->
+                    <table class="product-list">
+                        <thead class="product-header">
+                            <tr>
+                                <th>Product</th>
+                                <th>Part Number</th>
+                                <th>Quantity</th>
+                                <th>Unit Price</th>
+                                <th>Sub Total</th>
+                            </tr>
+                        </thead>
+                        <tbody class="product-body">
+                            <tr>
+                                <td>EconoBox</td>
+                                <td>LB100</td>
+                                <td>3</td>
+                                <td>R5</td>
+                                <td>R15</td>
+                            </tr>
+                            <tr>
+                                <td>Standard Box</td>
+                                <td>LB200</td>
+                                <td>4</td>
+                                <td>R10</td>
+                                <td>R40</td>
+                            </tr>
+                            <tr>
+                                <td>Premium Box&#47;TD&gt;</td>
+                                <td>LB300</td>
+                                <td>1</td>
+                                <td>R15</td>
+                                <td>R15</td>
+                            </tr>
+                            <tr>
+                                <td>Deluxe Box&#47;TD&gt;</td>
+                                <td>LB400</td>
+                                <td>0</td>
+                                <td>R20</td>
+                                <td> </td>
+                            </tr>
+                            <tr>
+                                <td>Super Deluxe Box&#47;TD&gt;</td>
+                                <td>LB500</td>
+                                <td>1</td>
+                                <td>R30</td>
+                                <td>R30</td>
+                            </tr>
+                        </tbody>
+                        <tfoot class="product-footer">
+                            <tr>
+                                <td colspan="4" style="text-align: end;"><label for="total">Total:</label></td>
+                                <td>R100</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </section>
+
+                <br><br><br>
+
+                <!-- Create a FORM for Credit Card Details -->
+                <section>
+                    <form>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th colspan="3" style="text-align: start;"><strong>Credit Card Details</strong></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td colspan="3" style="text-align: start;"><label for="card-type">Card Type:</label></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="radio" name="radioButton" id="radioButton" value="mastercard"> Mastercard<nbsp></nbsp>
+                                    <nbsp></nbsp>
+                                    <nbsp></nbsp></td>
+                                    <td><label for="card-number">Card Number:</label></td>
+                                    <td><input type="tel" name="card-number" id="card-number" placeholder="XXXX-XXXX-XXXX" maxlength="19" pattern="[0-9] {4}-[0-9] {4}-[0-9] {4}"></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="radio" name="radioButton" id="radioButton" value="visa"> Visa</td>
+                                    <td><label for="card-number">Expiry Date:</label></td>
+                                    <td><input type="date" name="card-number" id="card-number"></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="radio" name="radioButton" id="radioButton" value="american-express"> American Express</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="radio" name="radioButton" id="radioButton" value="diners-club"> Diners Club</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </form>
+                </section>
+
+                <br><br><br>
+
+                <!-- Create a FORM for Delivery Address -->
+                <section>
+                    <form>
+                        <table>
+                            <tr>
+                                <td><label for="delivery-address"><strong>Delivery Address:</strong></label></td>
+                                <td><textarea name="delivery-address" id="delivery-address" cols="22" rows="5" placeholder="Street, Road, Brgy, Sub. , City/Town"></textarea></td>
+                            </tr>
+                        </table>
+                    </form>
+                </section>
+            </main>
+
+            <br><br><br>
+
+            <!-- Create a footer section for submission and clear form buttons -->
+            <footer>
+                <form>
+                    <tr>
+                        <td colspan="2">
+                            <input type="submit" name="submitButton" id="submitButton" value="Send Order">
+                            <input type="reset" name="resetButton" id="resetButton" value="Clear Form">
+                        </td>
+                    </tr>
+                </form>
+            </footer>
+
+            <br><br><br>
+    </fieldset>
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        .header-title {
+            width: 100%;
+            background-color: aquamarine;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .nav-list {
+            background-color: rgb(114, 113, 113);
+            width: 15%;
+            padding: 0 10px;
+        }
+
+        .nav-list ul {
+            list-style: none;
+        }
+
+        .nav-list ul li a {
+            text-decoration: none;
+        }
+
+        .article {
+            background-color: rgb(233, 238, 238);
+            width: 70%;
+            padding: 0 10px;
+        }
+
+        .footer {
+            background-color: aquamarine;
+            display: flex;
+            justify-content: center;
+        }
+
+        .nav-list, article {
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+    <header class="header-title">
+        <span style="font-size: 40px; font-weight:bold;">
+            This is Web Page Main title
+        </span>
+    </header>
+    <main class="container">
+        <nav class="nav-list">
+            <ul>
+                <p><b>Right Menu</b></p>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">About Us</a></li>
+            </ul>
+        </nav>
+
+        <article class="article">
+            <header>
+                <h2>Frontend Web Development</h2>
+            </header>
+            <div>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, quos molestiae. Corrupti natus, soluta hic illum velit suscipit doloremque minima.
+                </p>
+            </div>
+        </article>
+
+        <nav class="nav-list">
+            <ul>
+                <p><b>Main Menu</b></p>
+                <li><a href="#">HTML</a></li>
+                <li><a href="#">CSS</a></li>
+                <li><a href="#">Javascript</a></li>
+            </ul>
+        </nav>
+    </main>
+
+    <footer class="footer">
+        <span>Copyright &copy; 2023</span>
+    </footer>
+</body>
+</html>

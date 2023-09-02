@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Javascript DOM</title>
+</head>
+<body>
+    
+    <h1>Adding HTML DOM Elements</h1>
+
+    <ol>
+        <li>
+            <h3>Document.createElement(element);</h3>
+            <p>
+                -adds element to the DOM.
+            </p>
+        </li>
+        <li>
+            <h3>document.createTextNode(text in quotes);</h3>
+            <p>
+                -this creates the text that can go inside and HTML element.
+            </p>
+        </li>
+        <li>
+            <h3>parentElement.appenChild(childElement);</h3> 
+        </li>
+        <li>
+            <h3>parentElement.insertBefore(newElement, existingElement);</h3>
+        </li>
+        <li>
+            <h3>parentElement.removeChild(childElement);</h3>
+            <p>
+                -removes the childElement
+            </p>
+        </li>
+        <li>
+            <h3>parentElement.replaceChild(newElement, oldElement);</h3>
+            <p>
+                -new element will replace the old element specified.
+            </p>
+        </li>
+    </ol>
+    
+    <h4>Examples:</h4>
+    <div id="parentDiv">
+        <p class="pClass" id="p1">This is the first paragraph.</p>
+        <p class="pClass" id="p2">This is the second paragraph.</p>
+        <a href="https://google.com" id="link">Google</a>
+    </div>
+                
+    <h2>3 Ways to manipulate content of an element</h2>
+    <ol>
+        <li>.innerHTML - it returns all text including HTML tags that is contained by an element.</li>
+        <li>.innerText - it returns all text contained by an element and all its child element.</li>
+        <li>.textContent - is all text contained by an element and all its children that are for formatting purpose only.</li>
+    </ol>
+
+    <h4>Examples:</h4>
+    <div id="divContent">
+        This element has a <strong>strong tag</strong>.
+    </div>
+
+    <h2>Traversing Javscript and DOM</h2>
+    <div id="userInputs">
+
+    </div>
+    <div id="table">
+
+    </div>
+    <button type="button" onclick="createTable()">Generate Table</button>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
